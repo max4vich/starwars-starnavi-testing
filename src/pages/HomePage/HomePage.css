@@ -1,0 +1,69 @@
+.home-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    gap: 40px;
+    padding-bottom: 100px;
+}
+
+.home-page h1 {
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+.heroes-list {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    column-gap: 40px;
+    row-gap: 40px;
+}
+
+.load-button {
+    display: flex;
+    width: 189px;
+    height: 45px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 16px;
+    background: #FFF;
+    color: #000;
+    font-family: Montserrat;
+    font-size: 16px;
+    transition: 0.5s all;
+}
+
+.load-button:hover {
+    background: rgba(255, 255, 255, 0.62);
+}
+
+@media screen and (max-width: 1600px) {
+    .heroes-list {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+@media screen and (max-width: 1250px) {
+    .heroes-list {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media screen and (max-width: 950px) {
+    .heroes-list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .heroes-list {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
