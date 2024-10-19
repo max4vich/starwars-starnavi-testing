@@ -25,7 +25,7 @@ Make sure you have [Node.js](https://nodejs.org/) installed on your machine.
 
    ```bash
    git clone <repository-url>
-   cd star-wars-heroes-viewer
+   cd starwars-starnavi-testing
    ```
 
 2. Install the dependencies:
